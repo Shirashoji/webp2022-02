@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>演習課題02</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/onouepanda-t600.ico" type="image/x-icon">
+    <meta name="author" content="SHIRASHOJI Takuma">
+    <meta name="description" content="日本大学文理学部情報科学科 Webプログラミングの演習課題">
+    <!-- 外部の使用しちゃダメそうだからコメントアウト <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+    <header>
+        <h1>課題02</h1>
+        <nav class="navi">
+            <ul class="topic-list">
+                <li><a href="#iframe-tag">iframe</a></li>
+                <li><a href="#table-tag">table</a></li>
+                <li><a href="#table-tag">table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    </nav>
+    <main>
+        <div>
+            <p>5421551 白庄司拓真</p>
+            <p>このページは 日本大学文理学部情報科学科 Webプログラミングの演習課題 です．<br>誤った情報が含まれている可能性があります．あらかじめご了承ください．</p>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js"
+                integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        </div>
+
+
+        <div class="topic" id="iframe-tag">
+            <h2>iframeタグ</h2>
+            <h3>説明</h3>
+            <p>他のページを埋め込んだりするのによく使われていますが，HTML要素を埋め込んだ利することもできる．</p>
+            <p>src属性はフレームの中の文章のURLを指定するのに使用します．</br>srcdoc属性はフレームの中の文章を直接書き込む場合に使用します．</p>
+            </p>
+            <h3>使用例</h3>
+
+            <h4>WHATWG Living Standardのiframeの項目の埋め込み(src属性)</h4>
+            <h5>コード</h5>
+            <pre><code class="language-markup">
+                        &lt;iframe src="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" width="30%"
+                        height="400px"&gt;&lt;/iframe&gt;</code></pre>
+            <h5>表示</h5>
+            <iframe src="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" width="30%"
+                height="400px"></iframe>
+
+            <h4>srcdoc属性を利用</h4>
+            <h5>コード</h5>
+            <pre><code class="language-markup">&lt;iframe srcdoc="&lt;p&gt;&#21069;&#22238;&#20316;&#12387;&#12383;&#12506;&#12540;&#12472;&#12399; &lt;a
+            href=&amp;quot;https://shirashoji.github.io/webp2022-tutorial/&amp;quot;&gt;&#12371;&#12385;&#12425;&lt;/a&gt;."
+            width="30%" height="400px"&gt;&lt;/iframe&gt;</code></pre>
+            <h5>表示</h5>
+            <iframe srcdoc="<p>前回作ったページは <a href=&quot;https://shirashoji.github.io/webp2022-tutorial/&quot;>こちら</a>."
+                width="30%" height="400px"></iframe>
+
+            <h4>Youtubeの埋め込みとかでも使われます．</h4>
+            <h5>コード</h5>
+            <pre><code class="language-markup">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/RXSRcP1FPCA" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+            <h5>表示</h5>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RXSRcP1FPCA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+        <div class="topic" id="table-tag">
+            <h2>iframeタグ</h2>
+            <h3>説明</h3>
+            <p>他のページを埋め込んだりするのによく使われていますが，HTML要素を埋め込んだ利することもできる．</p>
+            <p>src属性はフレームの中の文章のURLを指定するのに使用します．</br>srcdoc属性はフレームの中の文章を直接書き込む場合に使用します．</p>
+            </p>
+            <h3>使用例</h3>
+
+            <h4>WHATWG Living Standardのiframeの項目の埋め込み(src属性)</h4>
+            <h5>コード</h5>
+            <pre><code class="language-markup">
+                                &lt;iframe src="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" width="30%"
+                                height="400px"&gt;&lt;/iframe&gt;</code></pre>
+            <h5>表示</h5>
+            <iframe src="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" width="30%"
+                height="400px"></iframe>
+        </div>
+    </main>
+
+    <!-- 外部の使用しちゃダメそうだからコメントアウト <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"
+        integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</body>
+
+</html>
