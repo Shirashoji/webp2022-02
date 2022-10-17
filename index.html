@@ -75,22 +75,39 @@
 
 
         <div class="topic" id="table-tag">
-            <h2>iframeタグ</h2>
+            <h2>tableタグ</h2>
             <h3>説明</h3>
-            <p>他のページを埋め込んだりするのによく使われていますが，HTML要素を埋め込んだ利することもできる．</p>
-            <p>src属性はフレームの中の文章のURLを指定するのに使用します．</br>srcdoc属性はフレームの中の文章を直接書き込む場合に使用します．</p>
+            <p>表（table）を作成するのに使います．</p>
+            <p>captionタグは日本語で説明文とか字幕といった意味です．</br>その名の通り，表の説明などに使用し，表の上部に表示されます．</p>
+            <p>trタグは表の行を，tdタグはその中の列を作るのに使用します．</p>
             </p>
             <h3>使用例</h3>
 
-            <h4>WHATWG Living Standardのiframeの項目の埋め込み(src属性)</h4>
+            <h4>表の場所とか</h4>
             <h5>コード</h5>
-            <pre><code class="language-markup">
-                                &lt;iframe src="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" width="30%"
-                                height="400px"&gt;&lt;/iframe&gt;</code></pre>
+            <pre><code class="language-markup">&lt;table&gt;
+    &lt;caption&gt;表の説明とか&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td&gt; 一番左上 &lt;/td&gt;
+            &lt;td&gt; 中央上&lt;/td&gt;
+            &lt;td&gt; 右上&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt; 中央左&lt;/td&gt;
+            &lt;td&gt; 中央中央&lt;/td&gt;
+            &lt;td&gt; 中央右 &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt; 左下&lt;/td&gt;
+            &lt;td&gt; 中央下&lt;/td&gt;
+            &lt;td&gt; 右下&lt;/td&gt;
+        &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
             <h5>表示</h5>
-            <iframe src="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" width="30%"
-                height="400px"></iframe>
+            <iframe src="./examples/Table/ex1.html" width="30%" height="200px"></iframe>
         </div>
+
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"
