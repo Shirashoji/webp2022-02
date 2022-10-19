@@ -51,6 +51,18 @@ main {
   padding-top: 70px;
 }
 
+.topic h2 {
+  font-size: 25px;
+  background: bisque;
+  border-left: solid cornflowerblue 5px;
+  padding: 15px 13px;
+}
+
+.topic h3 {
+  font-size: 20px;
+  border-left: solid bisque 5px;
+  padding: 10px 15px;
+}
 
 /* pre {
   background-color: #f5f2f0;
