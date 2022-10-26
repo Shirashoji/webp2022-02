@@ -19,7 +19,7 @@
             <ul class="topic-list">
                 <li><a href="#iframe-tag">iframe</a></li>
                 <li><a href="#table-tag">table</a></li>
-                <li><a href="#table-tag">table</a></li>
+                <li><a href="#input-tag">input</a></li>
             </ul>
         </nav>
     </header>
@@ -61,7 +61,7 @@
             <iframe srcdoc="<p>前回作ったページは <a href=&quot;https://shirashoji.github.io/webp2022-tutorial/&quot;>こちら</a>."
                 width="30%" height="400px"></iframe>
 
-            <h4>Youtubeの埋め込みとかでも使われます．</h4>
+            <h4>Youtubeの埋め込み</h4>
             <h5>コード</h5>
             <pre><code class="language-markup">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/RXSRcP1FPCA" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -83,7 +83,7 @@
             </p>
             <h3>使用例</h3>
 
-            <h4>表の場所とか</h4>
+            <h4>表の場所とかの例</h4>
             <h5>コード</h5>
             <pre><code class="language-markup">&lt;table&gt;
     &lt;caption&gt;表の説明とか&lt;/caption&gt;
@@ -106,6 +106,64 @@
 &lt;/table&gt;</code></pre>
             <h5>表示</h5>
             <iframe src="./examples/Table/ex1.html" width="30%" height="200px"></iframe>
+        </div>
+
+        <div class="topic" id="input-tag">
+            <h2>inputタグ</h2>
+            <h3>説明</h3>
+            <p>入力とかに使われています．</br>パスワードとか，Googleとかの検索窓などのキーボードを使って入力するものなどで使われています．</p>
+            <p>type属性で，</p>
+            </p>
+            <h3>使用例</h3>
+
+            <h4>パスワード入力画面（送信とかはできない）の例</h4>
+            <h5>コード</h5>
+            <pre><code class="language-markup">
+            &lt;a&gt;ログインID: &lt;/a&gt;
+            &lt;input type=&quot;text&quot;&gt;&lt;/input&gt;
+            &lt;/br&gt;
+            &lt;a&gt;パスワード: &lt;/a&gt;
+            &lt;input type=&quot;password&quot;&gt;&lt;/input&gt;</code></pre>
+            <h5>表示</h5>
+            <iframe src="./examples/input/ex1.html" width="30%" height="200px"></iframe>
+
+            <h4>日時の入力例</h4>
+            <h5>コード</h5>
+            <pre><code class="language-markup">
+            &lt;input type=&quot;date&quot; /&gt;</code></pre>
+            <h5>表示</h5>
+            <iframe src="./examples/input/ex2.html" width="30%" height="200px"></iframe>
+
+            <h4>ラジオボタンの例</h4>
+            <a>よくチェックボックスとごっちゃにされますが，チェックボックスはtype属性がcheckboxで，ラジオボタンはtype属性がradioです．</br>そして，チェックボックスが複数選択できるのに対して，ラジオボタンは選択できるものは1つです．</a>
+            <a>同じグループにするためには，name属性の値を同じものにしておく必要があります．</a>
+            </a>
+            <h5>コード</h5>
+            <pre><code class="language-markup">
+            &lt;input type=&quot;radio&quot; name=&quot;alphabet&quot; /&gt;&lt;label&gt;A&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;alphabet&quot; /&gt;&lt;label&gt;B&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;alphabet&quot; /&gt;&lt;label&gt;C&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;alphabet&quot; /&gt;&lt;label&gt;D&lt;/label&gt;
+            </code></pre>
+
+            <h5>表示</h5>
+            <iframe src="./examples/input/radio.html" width="30%" height="200px"></iframe>
+
+
+            <h4>チェックボックスの例</h4>
+            <a>ラジオボタンは選択できるものは1つのみなのに対して，チェックボックスが複数選択できます．</a>
+            <a>同じグループにするためには，name属性の値を同じものにしておく必要があります．</a>
+            </a>
+            <h5>コード</h5>
+            <pre><code class="language-markup">
+            &lt;input type=&quot;checkbox&quot; name=&quot;alphabet&quot; /&gt;&lt;label&gt;A&lt;/label&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;alphabet&quot; /&gt;&lt;label&gt;B&lt;/label&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;alphabet&quot; /&gt;&lt;label&gt;C&lt;/label&gt;
+            &lt;input type=&quot;checkbox&quot; name=&quot;alphabet&quot; /&gt;&lt;label&gt;D&lt;/label&gt;
+            </code></pre>
+
+            <h5>表示</h5>
+            <iframe src="./examples/input/checkbox.html" width="30%" height="200px"></iframe>
         </div>
 
     </main>
